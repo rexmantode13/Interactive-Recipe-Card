@@ -1,4 +1,5 @@
-# Kasturba Restaurant — Interactive Recipe Collection
+# Kasturba Restaurant — 🍽️
+Interactive Recipe Collection
 
 A responsive, pixel-perfect, and interactive recipe collection built for Kasturba Restaurant. It showcases recipes with a step-by-step interactive cooking flow, integrated kitchen timers, dynamic progress indicators, and ingredients checklist.
 
