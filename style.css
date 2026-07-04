@@ -1,12 +1,12 @@
 
 :root {
-    --bg-color: #faf9f6; /* Warm Linen White */
-    --card-bg: #ffffff; /* Clean white */
+    --bg-color: #faf9f6;
+    --card-bg: #ffffff; 
     
     
-    --text-primary: #111111; /* Pitch black / Deep charcoal */
-    --text-secondary: #4a4a4a; /* Dark charcoal grey */
-    --text-muted: #888888; /* Slate grey */
+    --text-primary: #111111; 
+    --text-secondary: #4a4a4a; 
+    --text-muted: #888888; 
     
     --accent-color: #111111; 
     --accent-hover: #4a4a4a;
@@ -67,13 +67,13 @@ body {
 .restaurant-logo {
     font-family: var(--font-body);
     font-size: 1.3rem;
-    font-weight: 300; /* Extra light weight for modern luxury branding */
+    font-weight: 300;
     text-transform: uppercase;
-    letter-spacing: 0.35em; /* Elegantly spaced out letters */
+    letter-spacing: 0.35em; 
     color: var(--text-primary);
     display: inline-block;
     margin-bottom: 0.25rem;
-    padding-left: 0.35em; /* Perfectly centers the text by compensating for letter-spacing of the last character */
+    padding-left: 0.35em; 
 }
 
 .restaurant-tagline {
@@ -84,7 +84,7 @@ body {
     letter-spacing: 0.22em;
     color: var(--text-muted);
     margin-top: 0.3rem;
-    padding-left: 0.22em; /* Centers the tagline text */
+    padding-left: 0.22em; 
 }
 
 
@@ -109,11 +109,11 @@ body {
     padding-bottom: 1.25rem;
     flex-wrap: nowrap;
     overflow-x: auto;
-    scrollbar-width: none; /* Hide scrollbar for Firefox */
+    scrollbar-width: none; 
 }
 
 .recipe-selector::-webkit-scrollbar {
-    display: none; /* Hide scrollbar for Chrome/Safari */
+    display: none; 
 }
 
 .selector-tab {
