@@ -1,26 +1,25 @@
-/* Premium Minimalist Stylesheet for Assignment 2 */
 
 :root {
     --bg-color: #faf9f6; /* Warm Linen White */
     --card-bg: #ffffff; /* Clean white */
     
-    /* Monochrome Premium Palette */
+    
     --text-primary: #111111; /* Pitch black / Deep charcoal */
     --text-secondary: #4a4a4a; /* Dark charcoal grey */
     --text-muted: #888888; /* Slate grey */
     
-    --accent-color: #111111; /* Solid black for focus/emphasis */
+    --accent-color: #111111; 
     --accent-hover: #4a4a4a;
-    --accent-light: #f5f4ef; /* Very pale warm grey for active highlighting */
-    --border-color: #e5e2db; /* Very light delicate border */
-    --border-hover: #adaba4; /* Slightly darker active border */
+    --accent-light: #f5f4ef; 
+    --border-color: #e5e2db; 
+    --border-hover: #adaba4; 
     
     --font-heading: 'Lora', Georgia, serif;
     --font-body: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
     
     --transition-smooth: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
     --border-radius-sm: 2px;
-    --border-radius-md: 4px; /* Harder corners feel more premium and architectural */
+    --border-radius-md: 4px; 
 }
 
 /* Reset and Base Styles */
@@ -238,11 +237,11 @@ body {
 .recipe-image-container {
     position: relative;
     width: 100%;
-    max-width: 720px; /* Bounded width to make the image a little wider */
-    height: 440px; /* Increased height slightly more for a better visual balance */
-    margin: 0 auto 3rem; /* Center horizontally and keep bottom margin */
+    max-width: 720px; 
+    height: 440px; 
+    margin: 0 auto 3rem; 
     overflow: hidden;
-    border-radius: 8px; /* Slightly more curved corners for premium aesthetics */
+    border-radius: 8px; 
     border: 1px solid var(--border-color);
     background-color: var(--bg-color);
 }
