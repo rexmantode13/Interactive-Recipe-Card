@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kasturba Restaurant — Premium Recipe Collection</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🍽️</text></svg>">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="container">
+        <!-- Minimal Restaurant Header -->
+        <header class="restaurant-header">
+            <div class="restaurant-logo">Kasturba Restaurant</div>
+            <div class="restaurant-tagline">Culinary Excellence &amp; Fine Dining</div>
+        </header>
+
+        <article class="recipe-card">
+            <!-- Recipe Navigation -->
+            <nav class="recipe-selector" id="recipe-selector">
+                <button class="selector-tab active" data-recipe-id="lemon-cake">01 / Lemon Cake</button>
+                <button class="selector-tab" data-recipe-id="rose-kheer">02 / Cardamom Kheer</button>
+                <button class="selector-tab" data-recipe-id="paneer-tikka">03 / Paneer Tikka</button>
+                <button class="selector-tab" data-recipe-id="dal-tadka">04 / Dal Tadka</button>
+                <button class="selector-tab" data-recipe-id="butter-chicken">05 / Butter Chicken</button>
+            </nav>
+
+            <header class="recipe-header">
+                <span class="recipe-category" id="recipe-category">Classic Dessert</span>
+                <h1 class="recipe-title" id="recipe-title">Lemon Olive Oil Cake</h1>
+                <p class="recipe-description" id="recipe-description">
+                    A moist, tender cake infused with fresh citrus and rich, fruity extra-virgin olive oil. Perfect with a light dusting of powdered sugar.
+                </p>
+                
+                <div class="recipe-meta">
+                    <div class="meta-item">
+                        <span class="meta-label">Prep Time</span>
+                        <span class="meta-value" id="meta-prep">15 mins</span>
+                    </div>
+                    <div class="meta-divider"></div>
+                    <div class="meta-item">
+                        <span class="meta-label">Bake Time</span>
+                        <span class="meta-value" id="meta-cook">45 mins</span>
+                    </div>
+                    <div class="meta-divider"></div>
+                    <div class="meta-item">
+                        <span class="meta-label">Total Time</span>
+                        <span class="meta-value" id="meta-total">1 hr</span>
+                    </div>
+                    <div class="meta-divider"></div>
+                    <div class="meta-item">
+                        <span class="meta-label">Servings</span>
+                        <span class="meta-value" id="meta-servings">8 slices</span>
+                    </div>
+                    <div class="meta-divider"></div>
+                    <div class="meta-item">
+                        <span class="meta-label">Price</span>
+                        <span class="meta-value" id="meta-price">₹ 550</span>
+                    </div>
+                </div>
+            </header>
+
+            <div class="recipe-image-container">
+                <img src="dish.png" alt="Lemon Olive Oil Cake" class="recipe-image" id="recipe-image">
+            </div>
+
+            <div class="recipe-grid">
+                <div class="recipe-column">
+                    <section class="recipe-section" id="ingredients-section">
+                        <div class="section-header">
+                            <h2>Ingredients</h2>
+                            <button id="toggle-ingredients" class="btn-toggle" aria-expanded="false" aria-controls="ingredients-list">
+                                <span>Show Ingredients</span>
+                                <span class="toggle-indicator">+</span>
+                            </button>
+                        </div>
+                        
+                        <div id="ingredients-wrapper" class="collapsible-content">
+                            <ul id="ingredients-list" class="ingredients-list">
+                                <!-- Dynamic Contents populated by JS -->
+                            </ul>
+                        </div>
+                    </section>
+
+                    <!-- Kitchen Timer -->
+                    <section class="recipe-section timer-card" id="timer-section">
+                        <div class="timer-header">
+                            <span class="timer-title-icon">⏱️</span>
+                            <h3>Bake Timer</h3>
+                        </div>
+                        <div class="timer-display" id="timer-display">45:00</div>
+                        <div class="timer-controls">
+                            <button id="btn-timer-start" class="btn btn-secondary">Start</button>
+                            <button id="btn-timer-pause" class="btn btn-secondary" disabled>Pause</button>
+                            <button id="btn-timer-reset" class="btn btn-tertiary">Reset</button>
+                        </div>
+                    </section>
+                </div>
+
+                <div class="recipe-column">
+                    <section class="recipe-section" id="instructions-section">
+                        <div class="section-header">
+                            <h2>Instructions</h2>
+                            <button id="toggle-instructions" class="btn-toggle" aria-expanded="false" aria-controls="instructions-list">
+                                <span>Show Steps</span>
+                                <span class="toggle-indicator">+</span>
+                            </button>
+                        </div>
+
+                        <div id="instructions-wrapper" class="collapsible-content">
+                            <div class="cooking-progress-container" id="cooking-progress-container" style="display: none;">
+                                <div class="progress-header">
+                                    <span class="progress-step-counter" id="progress-step-counter">Cooking Progress</span>
+                                    <span class="progress-percentage" id="progress-percentage">0%</span>
+                                </div>
+                                <div class="progress-bar-track">
+                                    <div class="progress-bar-fill" id="progress-bar-fill" style="width: 0%"></div>
+                                </div>
+                            </div>
+
+                            <ol id="instructions-list" class="instructions-list">
+                                <!-- Dynamic Contents populated by JS -->
+                            </ol>
+
+                            <div class="cooking-controls">
+                                <button id="btn-start-cooking" class="btn btn-primary">Start Cooking</button>
+                                <div class="cooking-navigation" id="cooking-navigation" style="display: none;">
+                                    <button id="btn-prev-step" class="btn btn-tertiary" disabled>Previous</button>
+                                    <button id="btn-next-step" class="btn btn-primary">Next Step</button>
+                                    <button id="btn-reset-cooking" class="btn btn-tertiary">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <footer class="recipe-card-footer">
+                <button id="btn-print-recipe" class="btn btn-print">
+                    <svg viewBox="0 0 24 24" width="16" height="16" class="print-icon">
+                        <path fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" d="M6 9V2h12v7M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2m-12 0h12v4H6v-4z" />
+                    </svg>
+                    <span>Print Recipe</span>
+                </button>
+            </footer>
+        </article>
+    </main>
+
+    <footer class="page-footer">
+        <p>&copy; 2026 Kasturba Restaurant. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
