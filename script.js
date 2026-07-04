@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'Lemon Olive Oil Cake',
             category: 'Classic Dessert',
             description: 'A moist, tender cake infused with fresh citrus and rich, fruity extra-virgin olive oil. Perfect with a light dusting of powdered sugar.',
-            image: 'dish.png',
+            image: 'images/dish.png',
             timerText: 'Bake Timer',
             timerSeconds: 45 * 60, // 45 minutes
             meta: {
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'Cardamom Rose Kheer',
             category: 'Indian Dessert',
             description: 'A luxurious, slow-simmered rice pudding scented with green cardamom, saffron, and sweet rose water, finished with crunchy pistachios.',
-            image: 'kheer.png',
+            image: 'images/kheer.png',
             timerText: 'Cook Timer',
             timerSeconds: 35 * 60, // 35 minutes
             meta: {
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'Tandoori Paneer Tikka',
             category: 'Indian Appetizer',
             description: 'Delectable cubes of paneer marinated in a spiced yogurt blend, skewered with bell peppers and onions, and baked until perfectly charred.',
-            image: 'paneer.png',
+            image: 'images/paneer.png',
             timerText: 'Bake Timer',
             timerSeconds: 15 * 60, // 15 minutes
             meta: {
@@ -108,7 +108,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'Classic Dal Tadka',
             category: 'Indian Main',
             description: 'Creamy yellow split lentils simmered with turmeric and salt, then tempered with ghee, crackling cumin seeds, garlic, and hot chili powder.',
-            image: 'dal.png',
+            image: 'images/dal.png',
             timerText: 'Cook Timer',
             timerSeconds: 25 * 60, // 25 minutes
             meta: {
@@ -146,7 +146,7 @@ document.addEventListener('DOMContentLoaded', () => {
             title: 'Butter Chicken',
             category: 'Indian Main',
             description: 'Tender pieces of grilled tandoori chicken simmered in a velvety, spiced tomato-butter sauce, finished with fresh cream and dried fenugreek leaves.',
-            image: 'butter-chicken.png',
+            image: 'images/butter-chicken.png',
             timerText: 'Cook Timer',
             timerSeconds: 30 * 60, // 30 minutes
             meta: {
